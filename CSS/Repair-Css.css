@@ -349,6 +349,7 @@ input {
   height: 50px;
   width: 90px;
   font-size: 20px;
+  margin-left:10px;
   display: inline-block; /* блочный эл*/
   background-color: rgb(7, 21, 125);
   color:#f1eff5;
