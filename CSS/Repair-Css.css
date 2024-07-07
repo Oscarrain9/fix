@@ -160,6 +160,8 @@ p {
   opacity: 0.7;
   position:sticky;
   top: 20px;
+  top: 70px;
+  margin-left: 30px;
 
  /* outline: 3px solid #0e1c08; /* Параметры рамки */
  /* border-radius: 10px; /* Радиус скругления */
