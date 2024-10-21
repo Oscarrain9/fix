@@ -17,10 +17,10 @@ body{
 
 }
 /* меняет цвет*/
-@keyframes mymove {
+/*@keyframes mymove {
   from {background-color: #190574;}
   to {background-color: #4c052d;}
-  
+  */
 }
 /* меняет цвет*/
 
