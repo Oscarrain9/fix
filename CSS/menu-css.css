@@ -1,0 +1,152 @@
+/* navbar kontainer*/
+.navbar {
+    overflow: hidden;
+    background-color: rgb(48, 126, 9);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+/*navbar color change*/
+
+.navbar {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    height: 60px;
+   
+    
+    background-color: #f1eff5;
+    border-radius: 10px;
+    animation: mymove 9s infinite  /* меняет цвет*/
+}
+@keyframes mymove {
+    from {background-color: #11bf53;}
+    to {background-color: #720808;}
+    
+  }
+  /* move image*/
+  .imgP {
+    width: 50px;
+    height: 50px;
+    
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    
+  }
+  
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:100px; top:0px;}
+    50%  { left:200px; }
+    75%  { left:360px; }
+    100% { left:0px; top:0px;}
+  }
+
+/* link navbar*/
+.navbar a {
+    float: left;
+    font-size: 16px; /* size text*/
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/*Dropbtn button*/
+
+.dropdown {
+    float:left;
+    overflow:hidden;
+
+}
+/*drodown button*/
+.dropdown .dropbtn  {
+    font-size:16px;
+    border:none;
+    outline:none; /* border line*/
+    color: white;
+    padding: 14px 16px;
+    background-color: rgb(147, 138, 10);
+    font-family: fantasy; /* шрифт*/
+    margin: 0;
+    border-radius: 10px;
+
+}
+/* color for button menu*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(21, 134, 220);
+    border-radius: 10px;
+    box-shadow: -5px 10px 20px -5px rgb(2, 10, 0);
+}
+
+/* dropdown content(hidden by default)*/
+.dropdown-content {
+    display:none;
+    position:absolute;
+    background-color: rgb(48, 126, 9);
+    min-width: 160px;
+    box-shadow: -5px 10px 20px -5px rgb(57, 249, 4);
+    z-index: 1;
+    border-radius: 5% 5% 5% 5% ;
+
+}
+
+/* link inside the dropdown*/
+
+.dropdown content a {
+    float:none;
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* add grey background color to dropdown links hover*/
+.dropdown-content a:hover {
+    background-color:rgb(23, 146, 240);
+    
+}
+
+/* show the dropdown menu on hover*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* фото холод резина*/
+.imgFridge {
+    width: 200px;
+    height: 200px;
+}
+
+/* фото сушилка*/
+.DryerK {
+    width: 100px;
+    height: 200px;
+}
+
+
+.contDryerK {
+    margin-left: 20px;
+    border-color: #b7f00c;
+    border-style: solid;
+    width: 40%px;
+    height: 40%px;
+    display:block;
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+
+}
+.contPage {
+    border-style: solid;
+    box-shadow: -5px 10px 20px -5px rgb(63, 63, 62);
+    border-radius: 5px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
