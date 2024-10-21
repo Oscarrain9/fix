@@ -25,15 +25,15 @@ body{
 /* меняет цвет*/
 
 
-
+/*
 .active{
   color:#f8f2f2; /* цвет текста нав бар*/
   padding-left: 10px;
-  
+  */
   
   
 }
-
+/*
 .nav-li {
   background-color: #4e7a39;
   margin-left: 10px;
@@ -43,24 +43,24 @@ body{
   width: 200px;
   border-color: rgb(251, 190, 7);
   box-shadow: 0 4px 8px 0 rgb(248, 248, 3); /* тень*/
-  transition: all 0.9s ease;
-  
-  float: left /* сдвиг влево*/
+ /* transition: all 0.9s ease;
+  */
+  /* float: left /* сдвиг влево*/
   
  
  
  
   
 }
-
+/*
 .nav-li:hover {
   box-shadow: 0 8px 16px 0 rgba(244, 147, 11, 0.96);/*при наведении тень дополнительно*/
-  width: 210px;
-  height: 50px;
-  border-radius: solid;
-  background-color: #20dc12c7;
+ /*  width: 210px;
+/*  height: 50px;
+ /* border-radius: solid;
+  background-color: #20dc12c7;*/
   
-}
+} /*
 .active:hover {
   text-align: justify;
   */
