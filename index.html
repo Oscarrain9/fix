@@ -363,18 +363,26 @@ No thanks needed) <strong>6043796918</strong> Call us for help</p>
     <a href="index.html" class="btn-link">Main page</a>
     <hr>
     <div>Website created in 2010-2024</div>
-    <p>Вы посетили эту страницу <span id="visit-count">0</span> раз(а).</p>
+    
+   <p class="counter">Vancouver: <span id="uniqueVisitCount">0</span></p>
 
-    <script>
-        // Получаем текущее количество визитов из Local Storage
-        let visitCount = localStorage.getItem('visitCount') || 0;
+<script>
+    // Инициализация
+    const uniqueVisitorsKey = 'uniqueVisitors';
+    const visitorId = Date.now(); // Уникальный ID на основе времени
+    let uniqueVisitCount = Number(localStorage.getItem('uniqueVisitCount')) || 0;
+    let uniqueVisitors = JSON.parse(localStorage.getItem(uniqueVisitorsKey)) || [];
 
-        // Увеличиваем счетчик визитов
-        visitCount++;
-        localStorage.setItem('visitCount', visitCount);
+    // Проверяем, был ли посетитель ранее
+    if (!uniqueVisitors.includes(visitorId)) {
+        uniqueVisitors.push(visitorId); // Добавляем уникального посетителя
+        uniqueVisitCount++; // Увеличиваем счетчик уникальных визитов
+        localStorage.setItem('uniqueVisitCount', uniqueVisitCount); // Сохраняем новый счетчик
+        localStorage.setItem(uniqueVisitorsKey, JSON.stringify(uniqueVisitors)); // Сохраняем массив уникальных посетителей
+    }
 
-        // Отображаем количество визитов на странице
-        document.getElementById('visit-count').textContent = visitCount;
-    </script>
+    // Обновляем отображение счетчика на странице
+    document.getElementById('uniqueVisitCount').textContent = uniqueVisitCount;
+</script>
   </body>
 </html>
