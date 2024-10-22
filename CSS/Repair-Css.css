@@ -20,7 +20,7 @@ body{
 /*@keyframes mymove {
   from {background-color: #190574;}
   to {background-color: #4c052d;}
-  */
+*/
 }
 /* меняет цвет*/
 
@@ -29,7 +29,7 @@ body{
 .active{
   color:#f8f2f2; /* цвет текста нав бар*/
   padding-left: 10px;
-  */
+*/
   
   
 }
@@ -44,7 +44,7 @@ body{
   border-color: rgb(251, 190, 7);
   box-shadow: 0 4px 8px 0 rgb(248, 248, 3); /* тень*/
  /* transition: all 0.9s ease;
-  */
+*/
   /* float: left /* сдвиг влево*/
   
  
@@ -58,12 +58,13 @@ body{
  /*  width: 210px;
 /*  height: 50px;
  /* border-radius: solid;
-  background-color: #20dc12c7;*/
+  background-color: #20dc12c7;
+*/
   
 } /*
 .active:hover {
   text-align: justify;
-  */
+*/
   
 }
 /* бегущая кнопка*/
