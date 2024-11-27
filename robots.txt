@@ -1,6 +1,8 @@
 
 User-agent: Googlebot
 allow: 
+User-agent: googlebot-news
+Allow: /news/
 User-agent: googlebot-image
 allow: 
 User-agent: googlebot-mobile
