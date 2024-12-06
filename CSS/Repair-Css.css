@@ -48,6 +48,8 @@ h1 {
 img:hover {
   outline: 3px solid #56f50d; /* Параметры рамки */
   border-radius: 10px; /* рамка при наведении*/
+  width:70px;
+  height: 70px;
 }
 
 
