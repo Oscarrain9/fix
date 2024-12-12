@@ -1,7 +1,7 @@
 /* navbar kontainer*/
 .navbar {
     overflow: hidden;
-    background-image: linear-gradient(10deg, black, yellow);
+    background-image: linear-gradient(180deg, black, yellow);
     font-family: fantasy;
 
 
@@ -15,16 +15,16 @@
     height: 60px;
    
     
-    background-image:linear-gradient(10deg, black, yellow);
+    background-image:linear-gradient(180deg, black, yellow);
     border-radius: 10px;
     animation: mymove 6s infinite  /* меняет цвет*/
 }
 @keyframes mymove {
-    0% { background-image:linear-gradient(10deg, black, light green);}
-    20% { background-image:linear-gradient(10deg, black, yellow);}
-    50% { background-image:linear-gradient(10deg, black, light green);}
-    70% { background-image:linear-gradient(10deg, black, yellow);}
-    100% { background-image:linear-gradient(10deg, black, light green);}
+    0% { background-image:linear-gradient(180deg, black, light green);}
+    20% { background-image:linear-gradient(180deg, black, yellow);}
+    50% { background-image:linear-gradient(180deg, black, light green);}
+    70% { background-image:linear-gradient(180deg, black, yellow);}
+    100% { background-image:linear-gradient(180deg, black, light green);}
     
  
   }
