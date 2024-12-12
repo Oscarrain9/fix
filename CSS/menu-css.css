@@ -16,7 +16,7 @@
     height: 60px;
    
     
-    background-image:linear-gradient( red, orange);
+    background-image:linear-gradient( black, orange);
     border-radius: 10px;
     animation: mymove 9s infinite  /* меняет цвет*/
 }
