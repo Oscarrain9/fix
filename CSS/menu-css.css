@@ -18,12 +18,12 @@
     
     background-image:linear-gradient( black, orange);
     border-radius: 10px;
-    animation: mymove 9s infinite  /* меняет цвет*/
+    animation: mymove 3s infinite  /* меняет цвет*/
 }
-@keyframes mymove {
+/*@keyframes mymove {
     from { background-image:linear-gradient( black, light green);}
     to { background-image:linear-gradient( black, yellow);}
-    
+*/ 
   }
   /* move image*/
   .imgP {
