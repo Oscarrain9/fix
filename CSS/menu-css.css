@@ -21,7 +21,7 @@
     animation: mymove 9s infinite  /* меняет цвет*/
 }
 @keyframes mymove {
-    from { background-image:linear-gradient( grey, orange);}
+    from { background-image:linear-gradient( black, light green);}
     to { background-image:linear-gradient( black, yellow);}
     
   }
