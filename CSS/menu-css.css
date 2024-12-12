@@ -21,9 +21,9 @@
 }
 @keyframes mymove {
     0% { background-image:linear-gradient(10deg, black, light green);}
-    20% { background-image:linear-gradient(10deg, black, green);}
+    20% { background-image:linear-gradient(10deg, black, yellow);}
     50% { background-image:linear-gradient(10deg, black, light green);}
-    70% { background-image:linear-gradient(10deg, black, green);}
+    70% { background-image:linear-gradient(10deg, black, yellow);}
     100% { background-image:linear-gradient(10deg, black, light green);}
     
  
