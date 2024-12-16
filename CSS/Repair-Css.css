@@ -19,30 +19,20 @@ h1 {
   
   background-color: rgb(166, 166, 176);
   box-shadow: 0 4px 8px 0 rgb(28, 28, 27); /* тень*/
+
+  ]
   
-  
-}
 
 
 
 
-.p-img {
-  background-color: rgb(87, 120, 109);
-  border-color: black;
-  border-radius: 20px;
-  margin-right: 50px;
-  padding-left: 50px;
-  box-shadow: 0 4px 8px 0 rgb(248, 248, 3); /* тень*/
 
-}
 
-.p-img:hover {
-  box-shadow: 0 8px 16px 0 rgba(7, 238, 22, 0.566);/*при наведении тень дополнительно*/
-}
+
+
 
 img:hover {
   outline: 3px solid #56f50d; /* Параметры рамки */
-  border-radius: 10px; /* рамка при наведении*/
   opacity: 50%;
 }
 
