@@ -69,32 +69,7 @@ p {
 
 /* кнопка звонок*/
 
-#pc4el {
-  border-radius: 30%;
-  background-color: rgb(166, 166, 176);
-  box-shadow: 0 4px 8px 0 rgb(7, 232, 244); /* тень*/
-  transition: 0.8s;  /*время появления*/  
-                               
 
-   /* при наведенни врщается*/
-    width: 90px;
-    height: 90px;
-    border: 4px double #bd6c46; /* Рамка */
-    overflow: hidden;
-    -webkit-transition: all 0.5s ease;
-     transition: all 0.5s ease;
-  } 
-  #pc4el:hover {
-    /* при наведенни врщается*/
-    border-radius: 50%;
-    -webkit-transform: rotate(360deg);
-     transform: rotate(360deg);
-  }
-       
-
-#pc4el:hover {
-  box-shadow: 0 8px 16px 0 rgba(7, 238, 22, 0.566);/*при наведении тень дополнительно*/
-}
 
 #ul-list {
   border-radius: 25px;
