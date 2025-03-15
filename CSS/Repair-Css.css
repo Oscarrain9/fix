@@ -222,6 +222,15 @@ a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
 
+/* нижн ссыл кноп увеличение при навед */
+.increase {
+  transition: transform 0.3s ease; /*  увеличение */
+  
+}
 
+.increace:hover {
+  transition: transform 0.3s ease; /*  увеличение */
+  
+}
 
 
