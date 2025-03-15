@@ -7,7 +7,7 @@
 
 }
 /* прилип к верх */
-.stick{
+#stick{
     position: sticky;
     top: 0;
 }
