@@ -6,6 +6,11 @@
 
 
 }
+/* прилип к верх */
+.sticky{
+    position: sticky;
+    top: 0;
+}
 /*navbar color change*/
 
 .navbar {
