@@ -228,8 +228,9 @@ a:hover {
   
 }
 
-.increace:hover {
-  transition: transform 0.3s ease; /*  увеличение */
+.increase:hover {
+  transform: scale(1.2); /* увелич ссылку в 20% */
+  color: red;
   
 }
 
