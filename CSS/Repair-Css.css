@@ -213,6 +213,14 @@ input {
   background-color: rgb(12, 133, 119);
 }
 
+/* увелич текста ссылки*/
+a {
+  transition: transform 0.3s ease; /*  увеличение */
+}
+
+a:hover {
+  transform: scale(1.2); /* увелич ссылку в 20% */
+}
 
 
 
