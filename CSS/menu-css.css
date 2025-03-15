@@ -180,6 +180,12 @@
     height: 30%;
     display: flex;
 }
+/*прилип номер*/
+.stick {
+    position: sticky; /* прилип к верх */
+    top: 0;  /* прилип к верх */
+    
+}
 
 a {
   transition: transform 0.3s ease; /*  увеличение */
