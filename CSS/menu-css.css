@@ -176,3 +176,11 @@
     height: 30%;
     display: flex;
 }
+
+a {
+  transition: transform 0.3s ease; /*  увеличение */
+}
+
+a:hover {
+  transform: scale(3); /* увелич ссылку в 3 ра */
+}
