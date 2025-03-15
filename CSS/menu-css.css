@@ -182,5 +182,5 @@ a {
 }
 
 a:hover {
-  transform: scale(3); /* увелич ссылку в 3 ра */
+  transform: scale(1.2); /* увелич ссылку в 20% */
 }
