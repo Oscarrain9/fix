@@ -15,7 +15,8 @@
     list-style-type: none;
     margin: 10px;
     padding: 10px;
-    height: 60px;
+    height: 70px;
+    width:100%;
    
    
     
@@ -183,7 +184,7 @@
 /*прилип номер*/
 .stick {
     position: sticky; /* прилип к верх */
-    top: 60px;  /* прилип к верх */
+    top: 80px;  /* прилип к верх */
     
 }
 
