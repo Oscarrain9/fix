@@ -343,9 +343,53 @@ No thanks needed) <strong>6043796918</strong> Call us for help</p>
      
    <!-- картинка выезд слева-->
     <div class="image-container">
-      <img src="img/fixbc.com.png"style="width:40%; height:30px; alt="Service-dryer-vancouver" class="image1">
-      <img src="img/fixbc.com.png" style="width:40%; height:30px; alt="service-washing-machine-vancouver" class="image2">
+      <img src="img/fixbc.com.png"style="width:40px; height:30px; alt="Service-dryer-vancouver" class="image1">
+      <img src="img/fixbc.com.png" style="width:40px; height:30px; alt="service-washing-machine-vancouver" class="image2">
     </div>
+<style>
+      /* картинка зелен круглая*/
+
+.image-container {
+    position: relative;
+    width: 200px;  /* Размер контейнера */
+    height: 200px; /* Размер контейнера */
+    margin-left: 500px;
+  }
+  
+  .image1,.image2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;  /* Изначально скрыт */
+    transition: opacity 2 s ease-in-out; /* Плавн изменение прозрачности */
+  }
+  
+  /* Первое изображение всегда видно */
+  .image1 {
+    opacity: 1;
+  }
+  
+  /* Второе изображение с анимацией появления и исчезания */
+  .image2 {
+    animation: fadeInOut 5s infinite; /* Бесконечная анимация */
+    left: 350px;
+  }
+  
+  /* Анимация появления и исчезания */
+  @keyframes fadeInOut {
+    50%, 100% {
+      opacity: 0;
+      
+    }
+    90% {
+      opacity: 1;
+      left: 30px;
+    }
+  }
+  
+  </style>
 
    
     <hr>
