@@ -233,48 +233,48 @@ a:hover {
   color: red;
   
 }
+
 /* картинка зелен круглая*/
+
 .image-container {
-  position: relative;
-  width: 100px;  /* Размер контейнера */
-  height: 100px; /* Размер контейнера */
-  margin-left: 10px;
-}
+    position: relative;
+    width: 200px;  /* Размер контейнера */
+    height: 200px; /* Размер контейнера */
+    margin-left: 500px;
+  }
   
-.image1, .image2 {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 0;  /* Изначально скрыт */
-  transition: opacity 2 s ease-in-out; /* Плавн изменение прозрачности */
-}
+  .image1, .image2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;  /* Изначально скрыт */
+    transition: opacity 2 s ease-in-out; /* Плавн изменение прозрачности */
+  }
   
   /* Первое изображение всегда видно */
-.image1 {
-  opacity: 1;
-}
-  
-/* Второе изображение с анимацией появления и исчезания */
-.image2 {
-  animation: fadeInOut 5s infinite; /* Бесконечная анимация */
-  left: 350px;
-}
-
-/* Анимация появления и исчезания */
-@keyframes fadeInOut {
-  50%, 100% {
-    opacity: 0;
-    
-  }
-  90% {
+  .image1 {
     opacity: 1;
-    left: 30px;
   }
-}
-
-/* картинка зелен круглая*/
+  
+  /* Второе изображение с анимацией появления и исчезания */
+  .image2 {
+    animation: fadeInOut 5s infinite; /* Бесконечная анимация */
+    left: 350px;
+  }
+  
+  /* Анимация появления и исчезания */
+  @keyframes fadeInOut {
+    50%, 100% {
+      opacity: 0;
+      
+    }
+    90% {
+      opacity: 1;
+      left: 30px;
+    }
+  }
   
 
 
