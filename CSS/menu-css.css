@@ -1,29 +1,37 @@
 /* new navbar kontainer*/
+/* Navbar container */
 .navbar {
   display: flex;
   flex-wrap: wrap;
   background-color: #333;
-  overflow: hidden;
-  justify-content: center; /* Центрирует меню */
+  justify-content: center;
+  padding: 0;
 }
 
+/* Стили ссылок и кнопки */
 .navbar a, .dropbtn {
   color: white;
-  text-align: center;
   padding: 14px 20px;
   text-decoration: none;
   display: block;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 16px;
 }
 
+/* Hover для ссылок и кнопки */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
 }
 
+/* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+/* Подменю */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -33,6 +41,7 @@
   flex-direction: column;
 }
 
+/* Ссылки внутри подменю */
 .dropdown-content a {
   color: white;
   padding: 12px 16px;
@@ -44,6 +53,7 @@
   background-color: #666;
 }
 
+/* Показываем подменю при наведении на контейнер .dropdown */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -54,9 +64,10 @@
     flex-direction: column;
   }
   .dropdown-content {
-    position: static; /* Чтобы подменю шло по потоку на мобильных */
+    position: static; /* Подменю станет обычным блоком на мобильных */
   }
 }
+
 /*новый*/
 
 
@@ -254,6 +265,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
