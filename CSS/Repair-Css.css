@@ -1,21 +1,96 @@
-body{
+/*body{
   background-color: rgb(148, 143, 143);
   color:rgb(5, 6, 6);
   margin-left: 50px;
   width: 100% ;
 }
-
+*/
+body {
+  background-color: #94908F; /* rgb(148,143,143) */
+  color: #050606;            /* rgb(5,6,6) */
+  margin: 0;                 /* убираем фиксированные отступы */
+  padding-left: 50px;        /* если нужен внутренний отступ слева */
+  box-sizing: border-box;    /* чтобы padding не ломал ширину */
+  font-family: Arial, sans-serif; /* читаемый шрифт */
+}
   
 h1 {
   color:rgb(200, 16, 16);
 
 }
-/* галерея фото*/
+/* галерея фото
 .imggalery {
   height: 250px;
   width: 250px;
   margin: 10px;
   border-radius: 15%;
+ }
+  старое*/
+
+/* новое*/
+/* Контейнер галереи */
+.p-img {
+  display: flex;
+  flex-wrap: wrap;         /* Перенос картинок на следующую строку */
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 15px;               /* Расстояние между картинками */
+  padding: 10px;
+}
+
+/* Картинки галереи */
+.imggalery {
+  width: 250px;
+  height: 250px;
+  border-radius: 15%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Лёгкая тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+  opacity: 0;               /* Исходно скрыты для анимации появления */
+  animation: fadeIn 0.8s forwards; /* Анимация появления */
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover-эффект */
+.imggalery:hover {
+  transform: scale(1.05); /* Лёгкое увеличение */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Глубже тень при наведении */
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  .imggalery {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Смартфоны */
+@media (max-width: 768px) {
+  .imggalery {
+    width: 45%; /* Две картинки в ряд */
+    height: auto;
+  }
+}
+
+/* Малые телефоны */
+@media (max-width: 480px) {
+  .imggalery {
+    width: 90%; /* Почти на всю ширину */
+    height: auto;
+    margin: 5px 0;
+  }
+}
+/* новое*/
+
+
+
+
+
 
   
   background-color: rgb(166, 166, 176);
