@@ -121,8 +121,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
-}
+ }
 
 /*Dropbtn button*/
 
@@ -255,5 +254,6 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
