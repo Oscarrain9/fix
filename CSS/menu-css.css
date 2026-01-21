@@ -1,5 +1,5 @@
 /* new navbar kontainer*/
-/* Navbar container */
+/* Основной контейнер navbar */
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-/* Стили ссылок и кнопки */
+/* Ссылки и кнопка dropdown */
 .navbar a, .dropbtn {
   color: white;
   padding: 14px 20px;
@@ -18,27 +18,35 @@
   border: none;
   background: none;
   font-size: 16px;
+  text-align: center;
+  transition: background 0.3s;
 }
 
-/* Hover для ссылок и кнопки */
+/* Hover эффект для ссылок и кнопки */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
 }
 
-/* Dropdown container */
+/* Dropdown контейнер */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Подменю */
+/* Скрытое подменю */
 .dropdown-content {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   background-color: #444;
   min-width: 160px;
-  z-index: 1;
+  z-index: 1000;
+  top: 100%; 
+  left: 0;
   flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(-10px); /* слегка смещаем вверх */
 }
 
 /* Ссылки внутри подменю */
@@ -47,153 +55,39 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
+  transition: background 0.3s;
 }
 
 .dropdown-content a:hover {
   background-color: #666;
 }
 
-/* Показываем подменю при наведении на контейнер .dropdown */
+/* Показываем подменю при наведении */
 .dropdown:hover .dropdown-content {
   display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* плавно появляется */
 }
 
-/* Адаптивность */
+/* Адаптивность для мобильных */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
   }
   .dropdown-content {
-    position: static; /* Подменю станет обычным блоком на мобильных */
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
   }
 }
+
 
 /*новый*/
 
 
-/* navbar kontainer*/
-/*
-.navbar {
-    overflow: hidden;
-    /*background-image: linear-gradient(180deg, black, yellow);  изменен */ 
-    font-family: fantasy;
-    width: 70%;
-}
-
-/*navbar color change*/
-
-.navbar {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    height: 70px;
-    width:100%;
-   
-   
-    
-    background-image:linear-gradient(180deg, black, yellow);
-    border-radius: 10px;
-    animation: mymove 6s infinite  /* меняет цвет*/
-}
-@keyframes mymove {
-    0% { background-image:linear-gradient(180deg, black, light green);}
-    20% { background-image:linear-gradient(180deg, black, yellow);}
-    50% { background-image:linear-gradient(180deg, black, light green);}
-    70% { background-image:linear-gradient(180deg, black, yellow);}
-    100% { background-image:linear-gradient(180deg, black, light green);}
-    
- 
-  }
-  /* move image*/
-  .imgP {
-    width: 50px;
-    height: 50px;
-    
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: 10;
-    
-  }
-  
-  @keyframes example {
-    0%   { left:0px; top:0px;}
-    25%  { left:100px; top:0px;}
-    50%  { left:200px; }
-    75%  { left:360px; }
-    100% { left:0px; top:0px;}
-  }
-
-/* link navbar*/
-.navbar a {
-    float: left;
-    font-size: 25px; /* size text*/
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
- }
-
-/*Dropbtn button*/
-
-.dropdown {
-    float:left;
-    overflow:hidden;
-
-}
-/*drodown button*/
-.dropdown .dropbtn  {
-    font-size:25px;
-    border:none;
-    outline:none; /* border line*/
-    color: white;
-    padding: 14px 16px;
-    background-color: rgb(99, 224, 224);
-    font-family: fantasy; /* шрифт*/
-    margin: 0;
-    border-radius: 10px;
-
-}
-/* color for button menu*/
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-image:linear-gradient( red, yellow);
-    border-radius: 10px;
-    box-shadow: -5px 10px 20px -5px rgb(2, 10, 0);
-}
-
-/* dropdown content(hidden by default)*/
-.dropdown-content {
-    display:none;
-    position:absolute;
-    background-image:linear-gradient(black, yellow);
-    min-width: 160px;
-    box-shadow: -5px 10px 20px -5px rgb(249, 229, 4);
-    z-index: 1;
-    border-radius: 10px ;
-
-}
-
-/* link inside the dropdown*/
-
-.dropdown content a {
-    float:none;
-    color:black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* add grey background color to dropdown links hover*/
-.dropdown-content a:hover {
-     background-image:linear-gradient( red, black, red);
-    
-}
-
-/* show the dropdown menu on hover*/
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 */
 /*позвонить*/
 
@@ -265,6 +159,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
