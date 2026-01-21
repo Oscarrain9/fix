@@ -3,11 +3,8 @@
     overflow: hidden;
     /*background-image: linear-gradient(180deg, black, yellow);  изменен */ 
     font-family: fantasy;
-    width: 90%;
-
-
+    width: 70%;
 }
-
 
 /*navbar color change*/
 
@@ -195,3 +192,4 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
