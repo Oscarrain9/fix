@@ -1,6 +1,6 @@
 /* new navbar kontainer*/
 /* ===============================
-   ОСНОВНЫЕ СТИЛИ
+   BASE
    =============================== */
 
 * {
@@ -12,7 +12,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #333;
+  background-color: #de9b0b;
+   border-radius:50px 20px;
 }
 
 .navbar a,
@@ -46,15 +47,16 @@
   top: 100%;
   left: 0;
   min-width: 160px;
-  background-color: #444;
   display: flex;
   flex-direction: column;
 
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+
+  background: #444;
+  box-shadow: 0 8px 16px rgba(0,0,0,.3);
 }
 
 .dropdown-content a {
@@ -63,7 +65,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #666;
+  background: #51960c;
 }
 
 /* ===============================
@@ -79,21 +81,37 @@
 }
 
 /* ===============================
-   МОБИЛЬНЫЕ и ПЛАНШЕТЫ — CLICK
+   MOBILE & TABLET
    =============================== */
 
 @media (max-width: 768px) {
+
   .navbar {
     flex-direction: column;
+    align-items: stretch;
   }
 
+  .dropdown {
+    width: 100%;
+  }
+
+  /* ВАЖНО: не растягиваем фон */
   .dropdown-content {
     position: static;
+    background: none;
     box-shadow: none;
     transform: none;
   }
 
-  /* Открытие по клику (focus) */
+  /* аккуратные пункты */
+  .dropdown-content a {
+    background: #444;
+    margin: 4px 12px;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  /* открытие по клику */
   .dropdown:focus-within .dropdown-content {
     opacity: 1;
     visibility: visible;
@@ -101,7 +119,7 @@
 }
 
 /* ===============================
-   1200px+ — БОЛЬШИЕ ЭКРАНЫ
+   LARGE SCREENS
    =============================== */
 
 @media (min-width: 1200px) {
@@ -110,6 +128,7 @@
     margin: auto;
   }
 }
+
 
 
 
@@ -187,6 +206,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
