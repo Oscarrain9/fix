@@ -1,5 +1,8 @@
 /* new navbar kontainer*/
-/* Основной контейнер navbar */
+/* ===============================
+   ОСНОВНЫЕ СТИЛИ
+   =============================== */
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -8,8 +11,8 @@
   padding: 0;
 }
 
-/* Ссылки и кнопка dropdown */
-.navbar a, .dropbtn {
+.navbar a,
+.dropbtn {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
@@ -22,65 +25,111 @@
   transition: background 0.3s;
 }
 
-/* Hover эффект для ссылок и кнопки */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: #555;
 }
 
-/* Dropdown контейнер */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Скрытое подменю */
+/* ===============================
+   DROPDOWN
+   =============================== */
+
 .dropdown-content {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #444;
   min-width: 160px;
   z-index: 1000;
-  top: 100%; 
-  left: 0;
+  display: flex;
   flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  transform: translateY(-10px); /* слегка смещаем вверх */
 }
 
-/* Ссылки внутри подменю */
 .dropdown-content a {
-  color: white;
   padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  color: white;
   text-align: left;
-  transition: background 0.3s;
 }
 
 .dropdown-content a:hover {
   background-color: #666;
 }
 
-/* Показываем подменю при наведении */
+/* ===============================
+   DESKTOP — HOVER
+   =============================== */
+
 .dropdown:hover .dropdown-content {
-  display: block;
   opacity: 1;
   visibility: visible;
-  transform: translateY(0); /* плавно появляется */
+  transform: translateY(0);
 }
 
-/* Адаптивность для мобильных */
-@media (max-width: 700px) {
+/* ===============================
+   320–480px — МОБИЛЬНЫЕ
+   =============================== */
+
+@media (max-width: 480px) {
   .navbar {
     flex-direction: column;
   }
+
+  .dropdown {
+    width: 100%;
+  }
+
   .dropdown-content {
     position: static;
+    box-shadow: none;
     transform: none;
+  }
+
+  /* Открытие по клику */
+  .dropdown:focus-within .dropdown-content {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+/* ===============================
+   481–768px — ПЛАНШЕТЫ
+   =============================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   769–1024px — НОУТБУКИ
+   =============================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+/* ===============================
+   1200px+ — БОЛЬШИЕ ЭКРАНЫ
+   =============================== */
+
+@media (min-width: 1200px) {
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -159,6 +208,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
