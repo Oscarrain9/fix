@@ -6,6 +6,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -13,9 +14,10 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: #de9b0b;
-   border-radius:50px 20px;
+  border-radius: 50px 20px;
 }
 
+/* Ссылки и кнопка dropdown */
 .navbar a,
 .dropbtn {
   color: #fff;
@@ -30,7 +32,7 @@
 }
 
 .navbar a:hover,
-.dropdown:hover .dropbtn {
+.dropbtn:hover {
   background-color: #555;
 }
 
@@ -40,6 +42,7 @@
 
 .dropdown {
   position: relative;
+  z-index: 1000; /* чтобы dropdown был поверх всего */
 }
 
 .dropdown-content {
@@ -56,12 +59,17 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 
   background: #444;
-  box-shadow: 0 8px 16px rgba(0,0,0,.3);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 2000; /* выше других элементов */
 }
 
 .dropdown-content a {
   padding: 12px 16px;
+  color: #fff;
   text-align: left;
+  border-radius: 4px;
+  margin: 2px 0;
+  transition: background 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -85,34 +93,33 @@
    =============================== */
 
 @media (max-width: 768px) {
-
   .navbar {
     flex-direction: column;
     align-items: stretch;
   }
 
   .dropdown {
-    width: 100%;
+    width: auto;
   }
 
-  /* ВАЖНО: не растягиваем фон */
   .dropdown-content {
-    position: static;
-    background: none;
-    box-shadow: none;
+    position: absolute; /* absolute, чтобы не растягивать весь экран */
+    top: 100%;
+    left: 0;
+    width: auto;
+    background: #444;
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
     transform: none;
   }
 
-  /* аккуратные пункты */
   .dropdown-content a {
-    background: #444;
     margin: 4px 12px;
-    border-radius: 6px;
     text-align: center;
   }
 
   /* открытие по клику */
   .dropdown:focus-within .dropdown-content {
+    display: flex;
     opacity: 1;
     visibility: visible;
   }
@@ -128,6 +135,7 @@
     margin: auto;
   }
 }
+
 
 
 
@@ -206,6 +214,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
