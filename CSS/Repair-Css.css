@@ -9,9 +9,10 @@ body {
   background-color: #94908F; /* rgb(148,143,143) */
   color: #050606;            /* rgb(5,6,6) */
   margin: 0;                 /* убираем фиксированные отступы */
-  padding-left: 50px;        /* если нужен внутренний отступ слева */
+  padding-left: 10px;        /* если нужен внутренний отступ слева */
   box-sizing: border-box;    /* чтобы padding не ломал ширину */
   font-family: Arial, sans-serif; /* читаемый шрифт */
+  width:100%;
 }
   
 h1 {
