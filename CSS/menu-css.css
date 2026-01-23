@@ -32,19 +32,10 @@
   border-radius:10px 10px 10px 10px;
 
    
-  animation: pulse 1.5s infinite; /* Пульсация каждые 1.5 секунды */
-}
-/* Пульсация каждые 1.5 секунды */
-@keyframes pulse {
-  0% {
-    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff;
-  }
-  50% {
-    text-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff, 0 0 60px #00aaff;
-  }
-  100% {
-    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff;
-  }
+ text-shadow: 
+ 0 0 5px #b3e0ff,   /* Легкое голубое свечение */
+ 0 0 18px #b3e0ff,  /* Среднее голубое свечение */
+ 0 0 16px #b3e0ff;  /* Сильное голубое свечение */
 }
 
 .navbar a:hover,
@@ -234,6 +225,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
