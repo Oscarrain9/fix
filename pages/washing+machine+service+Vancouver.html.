@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=../"Household+appliance+service+Fixbc.com+.ico" type="image/x-icon">
+    <meta name="description" content="Washing machine repair in Vancouver. Professional service for all brands of washing machines in Canada. Parts and repair services.">
+    <meta name="keywords" content="washing machine repair Vancouver, washing machine repair Canada, all brands washing machine repair, washing machine service Vancouver, washing machine diagnostics, emergency washing machine repair, affordable washing machine repair">
+    <meta name="robots" content="index, follow">
+    <title>Washing Machine Repair in Vancouver - All Brands and Models</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/Repair-Css.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/menu-css.css">
+          <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Appliance Repair Services",
+        "name": "FixBC Appliance Repair Services in Vancouver, Burnaby & Coquitlam",
+        "description": "At FixBC, we provide expert repair services for washing machines, dryers, dishwashers, refrigerators, ovens, and commercial coffee machines in Vancouver and Burnaby. Our skilled technicians ensure fast, reliable, and affordable repairs with guaranteed satisfaction.",
+        "provider": {
+          "@type": "Organization",
+          "name": "FixBC",
+          "url": "https://www.fixbc.com",
+          "telephone": "+1 604-379-6918",
+          "email": "info@fixbc.com"
+        },
+        "areaServed": ["Vancouver", "Burnaby", "Coquitlam"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Repair Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Washing Machine Repair",
+              "url": "https://fixbc.com/pages/Samsung.leaking.html",
+              "price": 150,
+              "priceCurrency": "CAD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Dryer Repair",
+              "url": "https://fixbc.com/pages/dryer.html",
+              "price": 150,
+              "priceCurrency": "CAD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Contact Service",
+              "url": "https://fixbc.com/pages/contact.html"
+            }
+          ]
+        },
+        "image": [
+          {
+            "@type": "ImageObject",
+            "url": "https://fixbc.com/img/screen.png",
+            "description": "Appliance Repair Services"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://fixbc.com/img/washing-m.png",
+            "description": "Household Appliance Repair"
+          }
+        ],
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "00:00", "closes": "00:00" }
+        ],
+        "potentialAction": [
+          {
+            "@type": "Action",
+            "name": "Repair washing machine",
+            "url": "https://fixbc.com/pages/Samsung.leaking.html"
+          },
+          {
+            "@type": "Action",
+            "name": "Repair dryer",
+            "url": "https://fixbc.com/pages/dryer.html"
+          },
+          {
+            "@type": "Action",
+            "name": "Contact us",
+            "url": "https://fixbc.com/pages/contact.html"
+          }
+        ]
+      }
+      </script>
+</head>
+<body>
+
+    <nav>
+     <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../index.html">Commercial</a>
+        <a href="../index.html">Install</a>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Pages</button>
+            <div class="dropdown-content">
+                <a href="Samsung.leaking.html">Washing machine</a>
+                <a href="Kenmore-dryer.html">Kenmore-dryer</a>
+                <a href="Dryer-Whirpool.html">Dryer Whirlpool</a>
+                <a href="../index.html">Dishwasher</a>
+                <a href="../index.html">Coffe-machine</a>
+                <a href="gasket-fridge-door.html">Fridge</a>
+                <a href="garburator.html">Garburator</a>
+            </div>
+        </div>
+    
+    </div>
+  </nav>
+
+    <header>
+        <h1>Washing Machine Repair in Vancouver</h1>
+        <p>If you are looking for reliable washing machine repair services in Vancouver, we are here to help. Our team of skilled professionals specializes in repairing all brands and models of washing machines. Whether it's a minor issue or a major malfunction, we can fix it quickly and efficiently, ensuring your machine is back to working order as soon as possible.</p>
+    </header>
+      <div class="p-img">
+        <img src="../img/Samsung dryer Vancouver-fixbc.jpg" alt="Samsung-dryer-repair-Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/dishwasher-service-vancouver.png" alt="Dishwasher repair Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/grill service1.jpg" alt="Grill service Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/grill service vancouver1.png" alt="Commercial grill service Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/washing-m.png" alt="Washing machine service Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/washing machine21.png" alt="Washing machine repair Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/washing-machine12.png" alt="Technician washing machine Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/screen.png" alt="Repair dryer washer Alex Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/Repair-stove.jpg" alt="Stove repair Vancouver" class="imggalery" loading="lazy"/>
+        <img src="../img/Repair-grill.jpg" alt="Restaurant grill service Vancouver" class="imggalery" loading="lazy"/>
+      </div>
+
+    <section>
+        <h2>Why Choose Our Washing Machine Repair Service in Vancouver?</h2>
+        <p>Our washing machine repair service in Vancouver is trusted by many customers for several reasons. First and foremost, we offer fast, affordable, and professional repair services. Whether you have a front-loading or top-loading washing machine, we have the skills and experience to fix it. We handle all types of issues, from simple repairs to complex electrical and mechanical problems. Our team uses only high-quality parts for replacements, ensuring your washing machine will function like new after the repair.</p>
+        <p>Our services are available for both residential and commercial customers. We understand how important it is to have a working washing machine, so we strive to offer quick turnaround times for repairs. In most cases, we can complete repairs on the same day or the next day, depending on the severity of the issue and part availability. Plus, we offer competitive rates, ensuring that our services are affordable for everyone.</p>
+        <p>We also offer a satisfaction guarantee on all our services, so you can rest assured that your washing machine is in good hands. If you experience any issues after our repairs, we will address them at no extra cost.</p>
+    </section>
+
+    <section>
+        <h2>Popular Washing Machine Brands We Repair in Vancouver</h2>
+        <p>In Vancouver and across Canada, many different brands of washing machines are popular. Our washing machine repair service specializes in all these brands, including both newer models and older machines. Here are some of the most popular washing machine brands that we repair:</p>
+        <ul>
+            <li><strong>Whirlpool</strong> – One of the most trusted washing machine brands in Canada. Whether you have a traditional Whirlpool model or a newer one with advanced features, we can help. We perform both mechanical and electrical repairs on Whirlpool washing machines, including motor issues, drum problems, and control board repairs.</li>
+            <li><strong>Samsung</strong> – Samsung washing machines are known for their cutting-edge technology, energy efficiency, and smart features. If you're experiencing problems with your Samsung washing machine, such as issues with sensors, control boards, or water drainage, our experts can resolve them efficiently.</li>
+            <li><strong>LG</strong> – LG washing machines are highly regarded for their reliability and innovative features. Whether your LG washing machine is facing problems with spinning, draining, or starting, our team has the knowledge and experience to get it back up and running.</li>
+            <li><strong>Bosch</strong> – Known for their German engineering and high quality, Bosch washing machines offer excellent performance. We provide expert repair services for Bosch models, including troubleshooting drum and motor problems, as well as addressing issues with the water inlet and drainage systems.</li>
+            <li><strong>Maytag</strong> – Maytag is a well-known American brand that is often associated with durability. We offer a full range of repair services for Maytag washing machines, including fixing issues with motors, belts, and washing cycles. We also provide preventive maintenance services to ensure your machine runs smoothly.</li>
+            <li><strong>Kenmore</strong> – Popular for their affordability and durability, Kenmore washing machines require occasional repairs to maintain performance. We specialize in repairing Kenmore models, fixing common problems like poor draining, leaks, and issues with the washer’s agitation system.</li>
+            <li><strong>Frigidaire</strong> – A trusted brand for budget-conscious consumers. We provide expert Frigidaire washing machine repairs, including motor, drainage, and cycle-related issues. Whether you have a top-load or front-load model, we can fix it quickly.</li>
+            <li><strong>GE (General Electric)</strong> – We provide reliable washing machine repair services for GE models. Whether it’s an issue with the spin cycle, water levels, or any other malfunction, our technicians can handle it. We also perform regular maintenance and part replacement for GE washers.</li>
+            <li><strong>Fisher & Paykel</strong> – Known for their innovative designs and technology, Fisher & Paykel washing machines require specialized repairs. We have the expertise to work with this brand and address any issues, including pump malfunctions, drum failures, and control board problems.</li>
+            <li><strong>Miele</strong> – Miele washing machines are premium models known for their durability and high performance. Our team is trained to perform repairs on Miele machines, including issues with electrical components, water drainage, and motor functions.</li>
+            <li><strong>Haier</strong> – Haier washing machines are becoming increasingly popular in Canada. Our team can handle repairs for Haier models, including issues with motor performance, control systems, and water flow.</li>
+            <li><strong>Electrolux</strong> – Electrolux washing machines are known for their efficiency and innovative features. We offer repairs for all Electrolux models, including issues with washing cycles, water leaks, and drainage problems.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Our Washing Machine Repair Services</h2>
+        <p>We provide a wide range of washing machine repair services in Vancouver, ensuring that your appliance is always in excellent working condition. Our services include:</p>
+        <ul>
+            <li>Comprehensive diagnostics and troubleshooting of all washing machine issues</li>
+            <li>Repairs for all brands and models of washing machines</li>
+            <li>Replacement of damaged or worn-out parts (motors, pumps, belts, drums, etc.)</li>
+            <li>Cleaning and maintenance of washing machine components (filters, hoses, pumps)</li>
+            <li>Calibration and adjustment to optimize the performance of your washing machine</li>
+            <li>In-home washing machine repairs for your convenience</li>
+            <li>Emergency repairs with fast response times</li>
+            <li>Repairs for washing machines with uncommon or complex issues</li>
+            <li>Preventive maintenance to extend the life of your washing machine</li>
+        </ul>
+        <p>We also offer washing machine installation services for new units, helping you set up your appliance and ensuring it’s working perfectly from the start. Whether it's a new purchase or a replacement, we can help you get your washing machine running efficiently.</p>
+    </section>
+
+    <section>
+        <h2>Why Choose Our Washing Machine Repair Service in Vancouver?</h2>
+        <p>When it comes to washing machine repair in Vancouver, we are the go-to experts. Here are a few reasons why you should choose our service:</p>
+        <ul>
+            <li>Highly experienced and certified technicians with expertise in all brands</li>
+            <li>Fast and reliable service with quick turnaround times</li>
+            <li>Affordable pricing with no hidden fees – you’ll know the cost upfront</li>
+            <li>Use of high-quality parts and materials for long-lasting repairs</li>
+            <li>Comprehensive warranty on all repairs and replaced parts</li>
+            <li>Emergency repair services with flexible scheduling, even on weekends</li>
+            <li>Friendly and professional customer service – we care about your satisfaction</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Contact Us for Washing Machine Repair</h2>
+        <p>If you need reliable and affordable washing machine repair in Vancouver, get in touch with us today. We’ll help you get your washing machine fixed as quickly as possible!</p>
+        <p><strong>Address:</strong> Vancouver, British Columbia, Canada</p>
+        
+    </section>
+  
+    <footer>
+     <a href="#scroll" class="btn-link"><b> Top- move</b></a>
+    <a href="../pages/Kenmore-dryer.html" class="btn-link"> Kenmore Dryer no heating</a>
+    <a href="../pages/Dryer-Whirpool.html" class="btn-link"> Dryer Whirpool</a>
+    <a href="../pages/contact.html" class="btn-link">Contact- us</a>
+    <a href="../index.html" class="btn-link">Main page</a>
+    </footer>
+</body>
+</html>
