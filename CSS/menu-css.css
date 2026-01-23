@@ -29,13 +29,13 @@
   font-size: 16px;
   text-align: center;
   transition: background 0.3s;
-   border-radius: 10%;
+   border-radius:10px 10px 10px 10px;
 }
 
 .navbar a:hover,
 .dropbtn:hover {
   background-color:#057a05;
-   border-radius:10%;
+  border-radius:10px 10px 10px 10px;
 }
 
 /* ===============================
@@ -67,7 +67,7 @@
 
 .dropdown-content a {
   padding: 12px 16px;
-  color: #f0b907;
+  color: #212120;
   text-align: left;
   border-radius: 4px;
   margin: 2px 0;
@@ -75,14 +75,15 @@
 }
 
 .dropdown-content a:hover {
-  background: #51960c;
+  background: #213d05;
+  border-radius:10px 10px 10px 10px;
 }
 
 /* ===============================
    DESKTOP — HOVER
    =============================== */
 
-@media (min-width: 769px) {
+@media (min-width: 700px) {
   .dropdown:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
@@ -216,6 +217,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
