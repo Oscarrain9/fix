@@ -34,7 +34,7 @@
 
 .navbar a:hover,
 .dropbtn:hover {
-  background-color:#0f0f0f;
+  background-color:#057a05;
    border-radius:10%;
 }
 
@@ -60,7 +60,7 @@
   transform: translateY(-8px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 
-  background: #f0b907;
+  background: #212120;
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
   z-index: 2000; /* выше других элементов */
 }
@@ -216,6 +216,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
