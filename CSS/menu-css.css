@@ -30,11 +30,21 @@
   text-align: center;
   transition: background 0.3s;
   border-radius:10px 10px 10px 10px;
-      
-  font-size: 40px;
-  color: white;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 
+   
+  animation: pulse 1.5s infinite; /* Пульсация каждые 1.5 секунды */
+}
+/* Пульсация каждые 1.5 секунды */
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff;
+  }
+  50% {
+    text-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff, 0 0 60px #00aaff;
+  }
+  100% {
+    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff;
+  }
 }
 
 .navbar a:hover,
@@ -224,6 +234,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
