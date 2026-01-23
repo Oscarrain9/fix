@@ -8,19 +8,19 @@
   margin: 0;
   padding: 0;
 }
-
+/* Ссылки и кнопка dropdown black */
 .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #de9b0b;
+  background-color: #0f0f0f;
   border-radius: 50px 20px;
 }
 
-/* Ссылки и кнопка dropdown */
+/* Ссылки и кнопка dropdown white */
 .navbar a,
 .dropbtn {
-  color: #06bcbf;
+  color: #faf5f5; 
   padding: 14px 20px;
   text-decoration: none;
   background: none;
@@ -34,7 +34,7 @@
 
 .navbar a:hover,
 .dropbtn:hover {
-  background-color:#f0b907;
+  background-color:#0f0f0f;
    border-radius:10%;
 }
 
@@ -216,6 +216,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
