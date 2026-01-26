@@ -305,9 +305,59 @@ a:hover {
   
 }
 
-.increase:hover {
- 
-  color: red;
-  
-}
+/*низ ссылки блок*/
 
+  /* Общие стили для кнопок с классом .increase */
+  .increase {
+    display: block; /* Делаем ссылку блочным элементом для корректного позиционирования */
+    width: 100%; /* Кнопки займут всю ширину кнопки */
+    height: 100%;
+    background-color: yellow;
+    border-radius: 5%;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px; /* Центрируем текст внутри кнопки */
+    box-shadow: -5px 10px 20px -5px rgb(2, 10, 0);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .increase:hover {
+    box-shadow: -5px 10px 20px -5px rgba(0, 0, 255, 0.7); /* синее свечение при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+  }
+
+  /* Адаптивность для разных устройств */
+  /* Для экранов с шириной до 1200px (обычные десктопы) */
+  @media (max-width: 1200px) {
+    .increase {
+      width: 45%;
+      font-size: 20px;
+    }
+  }
+
+  /* Для экранов с шириной до 992px (планшеты в ландшафтном режиме) */
+  @media (max-width: 992px) {
+    .increase {
+      width: 48%;
+      font-size: 20px;
+    }
+  }
+
+  /* Для экранов с шириной до 768px (планшеты в портретном режиме и большие телефоны) */
+  @media (max-width: 768px) {
+    .increase {
+      width: 90%;
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+
+  /* Для экранов с шириной до 480px (мобильные телефоны) */
+  @media (max-width: 480px) {
+    .increase {
+      width: 90%;
+      height: 60px;
+      font-size: 16px;
+    }
+  }
+/*низ ссылки блок*/
