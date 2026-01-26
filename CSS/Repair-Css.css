@@ -300,64 +300,60 @@ a:hover {
 }
 
 /* нижн ссыл кноп увеличение при навед */
-.increase {
-  
-  
-}
 
-/*низ ссылки блок*/
+  /* Контейнер для кнопок */
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Разделяем на 3 колонки */
+    gap: 10px; /* Отступы между кнопками */
+    margin-top: 20px; /* Отступ сверху */
+  }
 
-  /* Общие стили для кнопок с классом .increase */
-  .increase {
-    display: block; /* Делаем ссылку блочным элементом для корректного позиционирования */
-    width: 100%; /* Кнопки займут всю ширину кнопки */
-    height: 100%;
-    background-color: yellow;
+  /* Общие стили для кнопок */
+  button {
+    width: 100%; /* Кнопки занимают 100% ширины своей колонки */
+    height: 40px;
+    background-color: black; /* Черный фон кнопок */
     border-radius: 5%;
     font-size: 22px;
-    text-align: center;
-    line-height: 40px; /* Центрируем текст внутри кнопки */
+    color: white; /* Белый текст */
     box-shadow: -5px 10px 20px -5px rgb(2, 10, 0);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin: 0; /* Убираем отступы для кнопок */
   }
 
-  .increase:hover {
-    box-shadow: -5px 10px 20px -5px rgba(0, 0, 255, 0.7); /* синее свечение при наведении */
-    transform: scale(1.05); /* Легкое увеличение при наведении */
+  button:hover {
+    box-shadow: -5px 10px 20px -5px rgba(0, 0, 255, 0.7); /* Синее свечение при наведении */
+    transform: scale(1.05);
   }
 
-  /* Адаптивность для разных устройств */
-  /* Для экранов с шириной до 1200px (обычные десктопы) */
+  /* Стили для ссылок внутри кнопок */
+  .increase {
+    text-decoration: none;
+    color: white; /* Белый текст внутри кнопки */
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    height: 100%;
+    overflow: hidden; /* Прячем текст, если он выходит за пределы */
+    text-overflow: ellipsis; /* Добавляем многоточие, если текст не помещается */
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  }
+
+  /* Адаптивность для разных экранов */
   @media (max-width: 1200px) {
-    .increase {
-      width: 45%;
-      font-size: 20px;
+    .button-container {
+      grid-template-columns: repeat(2, 1fr); /* Для средних экранов 2 колонки */
     }
   }
 
-  /* Для экранов с шириной до 992px (планшеты в ландшафтном режиме) */
-  @media (max-width: 992px) {
-    .increase {
-      width: 48%;
-      font-size: 20px;
-    }
-  }
-
-  /* Для экранов с шириной до 768px (планшеты в портретном режиме и большие телефоны) */
   @media (max-width: 768px) {
-    .increase {
-      width: 90%;
-      height: 50px;
-      font-size: 18px;
+    .button-container {
+      grid-template-columns: 1fr; /* Для мобильных устройств 1 колонка */
+    }
+    button {
+      font-size: 18px; /* Уменьшаем размер шрифта для мобильных */
+      height: 50px; /* Увеличиваем высоту для мобильных */
     }
   }
 
-  /* Для экранов с шириной до 480px (мобильные телефоны) */
-  @media (max-width: 480px) {
-    .increase {
-      width: 90%;
-      height: 60px;
-      font-size: 16px;
-    }
-  }
-/*низ ссылки блок*/
