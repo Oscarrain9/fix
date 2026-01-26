@@ -179,38 +179,108 @@
     height: 200px;
 }
 
-/* фото сушилка*/
-.DryerK {
-    width: 100px;
-    height: 200px;
-}
-
-
-.contDryerK {
-    margin-left: 5%;
-    border-color: #b7f00c;
-    border-style: solid;
-    border-width:5px;
-    width: 40%px;
-    height: 40%px;
-    display:block;
-    background-color: rgb(136, 164, 11);
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 10px;
-
-}
-.contPage {
-    margin-top:5%;
-    margin-bottom:5%;
-    border-style: solid;
-    box-shadow: -5px 10px 20px -5px rgb(63, 63, 62);
-    border-radius: 5px;
-    width: 100%;
-    height: 30%;
+/* блок ссылк текст */
+/* Общие стили для контейнера */
+  .contPage {
     display: flex;
-}
+    flex-wrap: wrap; /* Разрешаем оборачивание элементов в строки */
+    gap: 20px; /* Отступы между блоками */
+    margin: 20px; /* Отступы вокруг контейнера */
+    justify-content: center; /* Центрируем блоки */
+  }
+
+  /* Стили для каждого блока */
+  .contItem {
+    width: 100%; /* По умолчанию блоки занимают всю ширину */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем контент */
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .DryerK {
+    width: 100%; /* Изображения растягиваются на 100% ширины родительского элемента */
+    border-radius: 8px;
+    object-fit: cover;
+    height: auto;
+  }
+
+  /* Кнопка с ссылкой */
+  .contButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contButton a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .contButton:hover {
+    background-color: #0056b3;
+  }
+
+  /* Описание под кнопкой */
+  .contDescription {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word; /* Перенос слов, если они не помещаются */
+  }
+
+  /* Адаптивность для разных экранов */
+  @media (min-width: 768px) {
+    .contItem {
+      width: 48%; /* Два блока в ряд для экранов от 768px */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .contItem {
+      width: 30%; /* Три блока в ряд для экранов от 1200px */
+    }
+  }
+
+  /* Адаптивность для мобильных телефонов (до 480px) */
+  @media (max-width: 480px) {
+    .contItem {
+      width: 100%; /* На мобильных устройствах блоки занимают всю ширину */
+      padding: 10px; /* Меньше отступов для мобильных */
+    }
+
+    .contButton {
+      font-size: 18px; /* Уменьшаем размер шрифта на мобильных */
+      padding: 8px 15px; /* Меньше отступов на кнопках */
+    }
+
+    .contDescription {
+      font-size: 14px; /* Уменьшаем шрифт в описании для мобильных */
+      padding: 0 10px; /* Увеличиваем отступы для текста */
+    }
+
+    .DryerK {
+      height: 200px; /* Ограничиваем высоту изображений для мобильных устройств */
+    }
+  }
+/* блок ссылк текст */
+
+
 /*прилип номер*/
 .stick {
     position: sticky; /* прилип к верх */
@@ -225,6 +295,7 @@ a {
 a:hover {
   transform: scale(1.2); /* увелич ссылку в 20% */
 }
+
 
 
 
