@@ -356,4 +356,62 @@ a:hover {
       height: 50px; /* Увеличиваем высоту для мобильных */
     }
   }
+/* движ картинка справа экр*/
+ .image-container {
+            position: fixed; /* Чтобы картинка оставалась на экране */
+            top: 50%; /* По центру по вертикали */
+            right: 0; /* Картинка будет справа */
+            width: 100px; /* Ширина картинки */
+            height: 100px; /* Высота картинки */
+            animation: scroll-up-down 5s linear infinite; /* Анимация */
+        }
+
+        /* Анимация движения картинки */
+        @keyframes scroll-up-down {
+            0% {
+                transform: translateY(100%); /* Начинаем снизу (вне экрана) */
+            }
+            50% {
+                transform: translateY(-100%); /* Картинка вверху (вне экрана) */
+            }
+            100% {
+                transform: translateY(100%); /* Вернуться обратно вниз */
+            }
+        }
+      /* Для телефонов (мобильные устройства) */
+        @media (max-width: 767px) {
+            .image-container img {
+                width: 50px; /* Уменьшаем размер картинки на мобильных устройствах */
+                height: 50px;
+            }
+
+            .image-container {
+                animation-duration: 7s; /* Увеличиваем время анимации для мобильных устройств */
+            }
+        }
+
+        /* Для планшетов (ширина экрана от 768px до 1024px) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .image-container img {
+                width: 80px; /* Размер картинки для планшетов */
+                height: 80px;
+            }
+
+            .image-container {
+                animation-duration: 6s; /* Увеличиваем время анимации для планшетов */
+            }
+        }
+
+        /* Для обычных экранов (компьютеры, телевизоры) */
+        @media (min-width: 1025px) {
+            .image-container img {
+                width: 100px; /* Стандартный размер картинки для больших экранов */
+                height: 100px;
+            }
+
+            .image-container {
+                animation-duration: 5s; /* Стандартное время анимации для ПК и телевизоров */
+            }
+        }
+
 
